@@ -142,18 +142,17 @@ nav {
 
 .btn-outer-box{
     width: 300px;
-    height: 100px;
+    height: 90px;
     background-color: white;
-    margin: 0 auto;   
+    margin: 100px auto;   
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
 }
 
 .btn-inner-box{
     width: 285px;
-    height: 85px;
+    height: 75px;
     background-color: #2484BF;
     color: white;
     display: flex;
