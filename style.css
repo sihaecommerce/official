@@ -4,6 +4,7 @@
 
 body{
     margin:0;
+    background-color: #F5F5F5;
 }
 
 p{
@@ -95,6 +96,11 @@ nav {
     font-size: 1.5em;
 }
 
+/* main */
+main{
+    background-color: #F5F5F5;
+} 
+
 /* banner */
 .banner-holder{
     background-image: linear-gradient(to bottom, rgba(36, 132, 191, 0), rgba(36, 132, 191, 1)), url("./assets/banner.png");
@@ -165,4 +171,43 @@ nav {
 .btn-inner-box:hover{
     cursor: pointer;
 }
+
+.shop-now{
+    width: 70%;
+    height: 30vh;
+    background-color: white;
+    color: #104D73;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding-top: 7px;
+}
+
+.shop-now .btns-wrapepr{
+    display: flex;
+    justify-content: center;
+}
+
+.shop-now-btn,
+.about-us-btn{
+    display: flex;
+    width: 30%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #2484BF;
+}
+
+.shop-now-btn{
+    background-color: #333333;
+    margin-right: 60px;
+}
+
+.shop-now-btn:hover,
+.about-us-btn:hover{
+    cursor: pointer;
+}
+
+
 
