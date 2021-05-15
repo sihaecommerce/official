@@ -1,6 +1,7 @@
 const grid_btn = document.querySelector("#grid-btn")
 const list_btn = document.querySelector("#list-btn")
 
+// const 
 const seperators = document.querySelectorAll('.seperator') 
 
 let products_wrapper = document.querySelector('.product-list')

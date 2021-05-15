@@ -117,17 +117,25 @@ nav {
 main{
     background-color: #F5F5F5;
     margin-top: 15vh;
-    /* padding: 0 20px; */
+    padding: 0 20px;
     display: flex;
-    width: 100%;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 /* side menu */
 .side-menu{
     width: 20%;
+    height: 100vh;
     min-height: 100vh;
     background-color: #2484BF;
+    position: fixed;
+    left: 20px;
+    overflow-y: scroll;
+    /* visibility: hidden; */
+}
+
+.side-menu::-webkit-scrollbar{
+    display: none;
 }
 
 .categories-title{
@@ -150,7 +158,7 @@ main{
     flex-direction: column;
 }
 
-.categories-list li{
+.categories-list .rating-box{
     background-color: #F5F5F5;
     height: 7vh;
     width: 90%;
@@ -164,19 +172,32 @@ main{
     transition: all .3s ease;
 }
 
-.categories-list li:first-child{
+.categories-list .rating-box:first-child{
     border-top: 1px solid #104D73;
 }
 
-.categories-list li:hover{
+.categories-list .rating-box:hover{
     background-color: #104D73;
-    color: white;
+    /* color: white; */
     cursor: pointer;
+}
+
+.categories-list .stars-list li{
+    display: flex;
+    font-size: 1.2em;
+    color: #fdcc0d;
+    border: 1px solid yell;
+}
+
+.categories-list .stars-list li img{
+    width: 28.13px;
+    height: 25px;
 }
 /* main body */
 .main-body{
     width: 70%;
     min-height: 100vh;
+    margin-left: 25%;
 }
 
 .main-body .header{
@@ -285,15 +306,14 @@ main{
 .stars-list{
     display: flex;
 }
-.stars-list li{
-    display: flex;
-}
+
 .product-rating span{
     font-size: 16px;
     font-weight: 400;
     margin-left: 20px;
 }
 .stars-list li{
+    display: flex;
     font-size: 0.5em;
     color: #fdcc0d;
     border: 1px solid yell;
