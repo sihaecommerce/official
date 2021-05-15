@@ -18,6 +18,10 @@ ul{
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 .nav-list{
     display: flex;
     justify-content: space-between;
