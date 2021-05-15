@@ -232,6 +232,10 @@ main{
     font-size: 2em;
 }
 
+.display-settings .btn-holder div:hover{
+    cursor: pointer;
+}
+
 .display-settings .btn-holder .grid{
     margin-right: 20px;
 }
@@ -318,4 +322,13 @@ main{
     height: 2px;
     background-color: #104D73;
     opacity: 70%;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+.hide-sep{
+    display: none;
 }
