@@ -130,7 +130,6 @@ main{
     position: fixed;
     left: 20px;
     overflow-y: scroll;
-    /* visibility: hidden; */
 }
 
 .side-menu::-webkit-scrollbar{
@@ -157,7 +156,8 @@ main{
     flex-direction: column;
 }
 
-.categories-list .rating-box{
+.categories-list .rating-box,
+.categories-list .box{
     background-color: #F5F5F5;
     height: 7vh;
     width: 90%;
@@ -171,21 +171,25 @@ main{
     transition: all .3s ease;
 }
 
-.categories-list .rating-box:first-child{
+.categories-list .rating-box:first-child,
+.categories-list .box:first-child{
     border-top: 1px solid #104D73;
 }
-
-.categories-list .rating-box:hover{
-    background-color: #104D73;
-    /* color: white; */
+.categories-list .rating-box:hover,
+.categories-list .box:hover{
     cursor: pointer;
 }
-
+.categories-list .box:hover{
+    color: white;
+    background-color: #104D73;
+}
+.categories-list .stars-list{
+    margin-right: 10px;
+}
 .categories-list .stars-list li{
     display: flex;
-    font-size: 1.2em;
+    font-size: 1.25em;
     color: #fdcc0d;
-    border: 1px solid yell;
 }
 
 .categories-list .stars-list li img{
@@ -243,6 +247,11 @@ main{
     color: white;
     height: 70px;
     padding: 0 20px;
+}
+
+.display-settings h3{
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .display-settings .btn-holder{
@@ -315,7 +324,6 @@ main{
     display: flex;
     font-size: 0.5em;
     color: #fdcc0d;
-    border: 1px solid yell;
 }
 .stars-list li img{
     width: 28.13px;
