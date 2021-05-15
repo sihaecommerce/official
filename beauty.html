@@ -1,0 +1,455 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_catalogue.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/562a18c493.js" crossorigin="anonymous"></script>
+    <title>SIHA</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <a href="./index.html">
+                    <li class="logo">logo</li>
+                </a>
+                <li>
+                    <div class="search-box">
+                        <div class="search-box-holder">
+                            <div class="search-categories">
+                                <h3>All</h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                            <input class="search-text" type="text" placeholder="Find products">
+                            <div class="search-button" pl>
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-shopping-cart"></i>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="side-menu">
+            <div class="categories">
+                <div class="categories-title">
+                    <h1>CATEGORIES</h1>
+                </div>
+                
+                <div class="sub-categories">
+                    <ul class="categories-list">
+                        <li class="box">Beauty</li>
+                        <li class="box">Medicaments</li>
+                        <li class="box">Techs</li>
+                        <li class="box">Food</li>
+                        <li class="box">Clothes</li>
+                        <li class="box">Jewlery</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="categories">
+                <div class="categories-title">
+                    <h1>CUSTOMERS RATING</h1>
+                </div>
+                
+                <div class="sub-categories">
+                    <ul class="categories-list">
+                        <li class="rating-box" id="">
+                            <ul class="stars-list" id="five_stars_btn">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                            </ul>
+                        </li>
+                        <li class="rating-box" id="four_stars_btn">
+                            <ul class="stars-list">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><img src="./assets/empty-star.png" alt=""></li>
+                            </ul>
+                            & plus
+                        </li>
+                        <li class="rating-box" id="three_stars_btn">
+                            <ul class="stars-list">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><img src="./assets/empty-star.png" alt=""></li>
+                                <li><img src="./assets/empty-star.png" alt=""></li>
+                            </ul>
+                            & plus
+                        </li>
+                        <li class="rating-box" id="two_stars_btn">
+                            <ul class="stars-list">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><img src="./assets/empty-star.png" alt=""></li>
+                                <li><img src="./assets/empty-star.png" alt=""></li>
+                                <li><img src="./assets/empty-star.png" alt=""></li>
+                            </ul>
+                            & plus
+                        </li>
+                        <li class="rating-box" id="one_stars_btn">
+                            <ul class="stars-list">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><img src="./assets/empty-star.png" alt=""></li>
+                                <li><img src="./assets/empty-star.png" alt=""></li>
+                                <li><img src="./assets/empty-star.png" alt=""></li>
+                                <li><img src="./assets/empty-star.png" alt=""></li>
+                            </ul>
+                            & less
+                        </li>
+                        <li class="rating-box" id="all_stars_btn">All Products</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="categorie">
+                <div class="categories-title">
+                    <h1>PRICING</h1>
+                </div>
+                
+                <div class="sub-categories">
+                    <ul class="categories-list">
+                        <li class="box">500</li>
+                        <li class="box">500-600</li>
+                        <li class="box">600-800</li>
+                        <li class="box">800-1000</li>
+                        <li class="box">1000+</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-body">
+            <div class="header">
+                <h3>
+                    <a href="./index.html">Home</a>
+                     > 
+                    <a href="./index.html">All Products</a>
+                     > 
+                    <a href="./index.html">Beauty</a>
+                </h3>
+            </div>
+
+            <div class="results-wrapper">
+                <div class="search-results">
+                    Search Results: "Beauty"
+                </div>
+    
+                <div class="display-settings">
+                    <div class="btn-holder">
+                        <div class="grid">
+                            <i class="fas fa-th" id="grid-btn"></i>
+                        </div>
+                        <div class="list">
+                            <i class="fas fa-list" id="list-btn"></i>
+                        </div>
+                    </div>
+                    <h3>Showing <span class="display-status"> All Products</span></h3>
+                </div>
+    
+                <div class="products-wrapper">
+                    <div class="product-list">
+
+                        <div class="product three_stars">
+                            <img src="./assets/lipstick.png" alt="">
+                            <div class="description">
+                                <h3>
+                                    Maybelline New York Color Sensational Shine Compulsion
+                                </h3>
+                                <div class="product-rating">
+                                    <ul class="stars-list">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                        <li><img src="./assets/empty-star.png" alt=""></li>
+                                    </ul>
+                                    <span>2,868</span>
+                                </div>
+                                <div class="price">
+                                    <div class="currency">
+                                        DH
+                                    </div>
+                                    <div class="main-price">
+                                        90
+                                    </div>
+                                    <div class="coma">
+                                        99
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product four_stars">
+                            <img src="./assets/lipstick.png" alt="">
+                            <div class="description">
+                                <h3>
+                                    Maybelline New York Color Sensational Shine Compulsion
+                                </h3>
+                                <div class="product-rating">
+                                    <ul class="stars-list">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><img src="./assets/empty-star.png" alt=""></li>
+                                    </ul>
+                                    <span>2,868</span>
+                                </div>
+                                <div class="price">
+                                    <div class="currency">
+                                        DH
+                                    </div>
+                                    <div class="main-price">
+                                        90
+                                    </div>
+                                    <div class="coma">
+                                        99
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product two_stars">
+                            <img src="./assets/lipstick.png" alt="">
+                            <div class="description">
+                                <h3>
+                                    Maybelline New York Color Sensational Shine Compulsion
+                                </h3>
+                                <div class="product-rating">
+                                    <ul class="stars-list">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><img src="./assets/empty-star.png" alt=""></li>
+                                        <li><img src="./assets/empty-star.png" alt=""></li>
+                                        <li><img src="./assets/empty-star.png" alt=""></li>
+                                    </ul>
+                                    <span>2,868</span>
+                                </div>
+                                <div class="price">
+                                    <div class="currency">
+                                        DH
+                                    </div>
+                                    <div class="main-price">
+                                        90
+                                    </div>
+                                    <div class="coma">
+                                        99
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="seperator"></div>
+                        <div class="seperator"></div>
+                        <div class="seperator"></div>
+
+                        <div class="product one_stars">
+                            <img src="./assets/lipstick.png" alt="">
+                            <div class="description">
+                                <h3>
+                                    Maybelline New York Color Sensational Shine Compulsion
+                                </h3>
+                                <div class="product-rating">
+                                    <ul class="stars-list">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><img src="./assets/empty-star.png" alt=""></li>
+                                        <li><img src="./assets/empty-star.png" alt=""></li>
+                                        <li><img src="./assets/empty-star.png" alt=""></li>
+                                        <li><img src="./assets/empty-star.png" alt=""></li>
+                                    </ul>
+                                    <span>2,868</span>
+                                </div>
+                                <div class="price">
+                                    <div class="currency">
+                                        DH
+                                    </div>
+                                    <div class="main-price">
+                                        90
+                                    </div>
+                                    <div class="coma">
+                                        99
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product one_stars">
+                            <img src="./assets/lipstick.png" alt="">
+                            <div class="description">
+                                <h3>
+                                    Maybelline New York Color Sensational Shine Compulsion
+                                </h3>
+                                <div class="product-rating">
+                                    <ul class="stars-list">
+                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                        <li><img src="./assets/empty-star.png" alt=""></li>
+                                        <li><img src="./assets/empty-star.png" alt=""></li>
+                                        <li><img src="./assets/empty-star.png" alt=""></li>
+                                        <li><img src="./assets/empty-star.png" alt=""></li>
+                                    </ul>
+                                    <span>2,868</span>
+                                </div>
+                                <div class="price">
+                                    <div class="currency">
+                                        DH
+                                    </div>
+                                    <div class="main-price">
+                                        90
+                                    </div>
+                                    <div class="coma">
+                                        99
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product five_stars">
+                            <img src="./assets/lipstick.png" alt="">
+                            <div class="description">
+                                <h3>
+                                    Maybelline New York Color Sensational Shine Compulsion
+                                </h3>
+                                <div class="product-rating">
+                                    <ul class="stars-list">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <span>2,868</span>
+                                </div>
+                                <div class="price">
+                                    <div class="currency">
+                                        DH
+                                    </div>
+                                    <div class="main-price">
+                                        90
+                                    </div>
+                                    <div class="coma">
+                                        99
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="seperator"></div>
+                        <div class="seperator"></div>
+                        <div class="seperator"></div>
+
+                        <div class="product five_stars">
+                            <img src="./assets/lipstick.png" alt="">
+                            <div class="description">
+                                <h3>
+                                    Maybelline New York Color Sensational Shine Compulsion
+                                </h3>
+                                <div class="product-rating">
+                                    <ul class="stars-list">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                    </ul>
+                                    <span>2,868</span>
+                                </div>
+                                <div class="price">
+                                    <div class="currency">
+                                        DH
+                                    </div>
+                                    <div class="main-price">
+                                        90
+                                    </div>
+                                    <div class="coma">
+                                        99
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product three_stars">
+                            <img src="./assets/lipstick.png" alt="">
+                            <div class="description">
+                                <h3>
+                                    Maybelline New York Color Sensational Shine Compulsion
+                                </h3>
+                                <div class="product-rating">
+                                    <ul class="stars-list">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                        <li><img src="./assets/empty-star.png" alt=""></li>
+                                    </ul>
+                                    <span>2,868</span>
+                                </div>
+                                <div class="price">
+                                    <div class="currency">
+                                        DH
+                                    </div>
+                                    <div class="main-price">
+                                        90
+                                    </div>
+                                    <div class="coma">
+                                        99
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product three_stars">
+                            <img src="./assets/lipstick.png" alt="">
+                            <div class="description">
+                                <h3>
+                                    Maybelline New York Color Sensational Shine Compulsion
+                                </h3>
+                                <div class="product-rating">
+                                    <ul class="stars-list">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><img src="./assets/empty-star.png" alt=""></li>
+                                        <li><img src="./assets/empty-star.png" alt=""></li>
+                                    </ul>
+                                    <span>2,868</span>
+                                </div>
+                                <div class="price">
+                                    <div class="currency">
+                                        DH
+                                    </div>
+                                    <div class="main-price">
+                                        90
+                                    </div>
+                                    <div class="coma">
+                                        99
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
