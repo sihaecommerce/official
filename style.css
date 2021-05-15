@@ -5,6 +5,7 @@
 body{
     margin:0;
     background-color: #F5F5F5;
+    max-width: 1920px;
 }
 
 p{
@@ -148,8 +149,8 @@ main{
 }
 
 .btn-outer-box{
-    width: 300px;
-    height: 90px;
+    width: 295px;
+    height: 85px;
     background-color: white;
     margin: 100px auto;   
     display: flex;
@@ -210,5 +211,156 @@ main{
     cursor: pointer;
 }
 
+/*/////////////////// OUR CATEGORIES ///////////////////////*/
+
+.categories{
+    color:#fff;
+    background-image: url("assets/blueback.png");
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+}
+.categories .titre{
+    font-size: 32px;
+    text-align: center;
+}
+.categories .ctg-main{
+    margin: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.categories .ctg-main .card{
+    width: calc(100%/6 - 30px);
+    height: 250px;
+    background: #fff;
+    text-align: center;
+}
+
+.categories .ctg-main .card .box{
+    transition: all 0.6s ease;
+    box-shadow: 6px 4px 4px rgba(43, 40, 40, 0.25);
+    cursor: pointer;
+}
+.categories .ctg-main .card .box img{
+    margin-top: 20px;
+    height: 160px;
+    width: auto;
+}
+.categories .ctg-main .card .text{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: #104D73;
+    margin-top: 35px;
+}
 
 
+/*/////////////////// CARROUSSEL ///////////////////////*/
+
+.caroussel{
+    color:#2484BF;
+    background-image: url("assets/whiteback.png");
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+    margin-top: -110px;
+}
+.caroussel .titre{
+    font-size: 32px;
+    text-align: center;
+}
+
+/*/////////////////// working ///////////////////////*/
+
+.working{
+    color:#fff;
+    background-image: url("assets/blueback.png");
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+    height: 80vh;
+}
+.working .titre{
+    font-size: 32px;
+    text-align: center;
+}
+.working .wrk-main{
+    margin: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.working .wrk-main .card{
+    width: calc(100%/3 - 30px);
+    height: 250px;
+    background: #fff;
+    text-align: center;
+}
+
+.working .wrk-main .card .box{
+    transition: all 0.6s ease;
+    box-shadow: 6px 4px 4px rgba(43, 40, 40, 0.25);
+    cursor: pointer;
+}
+.working .wrk-main .card .box img{
+    margin-top: 20px;
+    height: 160px;
+    width: auto;
+}
+.working .wrk-main .card .text{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #104D73;
+    margin-top: 35px;
+    padding-top: 10px;
+}
+.working .wrk-main .card p{
+    color: #fff;
+    background-color: #104D73;
+    font-size: 17px;
+    padding: 20px 70px;
+    letter-spacing: .7px;
+}
+
+
+/*/////////////////// PROPERTIES ///////////////////////*/
+
+.properties{
+    color:#2484BF;
+    background-image: url("assets/whiteback.png");
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+    margin-top: -110px;
+}
+.properties .titre{
+    font-size: 32px;
+    text-align: center;
+}
+
+.properties .ctg-main{
+    margin: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.properties .ctg-main .card{
+    width: calc(100%/4 - 30px);
+    height: 250px;
+    background: #E5E5E5;
+    text-align: center;
+}
+
+.properties .ctg-main .card .box{
+    transition: all 0.6s ease;
+    box-shadow: 6px 4px 4px rgba(43, 40, 40, 0.25);
+    cursor: pointer;
+}
+.properties .ctg-main .card .box img{
+    margin-top: 20px;
+    height: 160px;
+    width: auto;
+}
+.properties .ctg-main .card .text{
+    color: #2484BF;
+    font-size: 25px;
+    font-weight: 500;
+}
