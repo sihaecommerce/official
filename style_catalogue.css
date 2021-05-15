@@ -125,8 +125,7 @@ main{
 /* side menu */
 .side-menu{
     width: 20%;
-    height: 100vh;
-    min-height: 100vh;
+    height: 85vh;
     background-color: #2484BF;
     position: fixed;
     left: 20px;
