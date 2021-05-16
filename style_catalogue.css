@@ -430,7 +430,7 @@ footer{
     background-image: url("assets/footer.png");
     background-position-x: center;
     padding: 20px 0px;
-    height: 120vh;
+    height: 100vh;
     position:sticky;
     z-index: 100;
     margin-top: 200px;
