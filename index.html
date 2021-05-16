@@ -17,10 +17,7 @@
     <header>
         <nav>
             <ul class="nav-list">
-              
-                <a href="./index.html">
-                    <li class="logo">logo</li>
-                </a>
+                <li><a href="#Home"><img src="assets/SIHA.png"></a></li>
                 <li>
                     <div class="search-box">
                         <div class="search-box-holder">
@@ -51,7 +48,7 @@
             </div>
         </div>
 
-        <div class="contact-us">
+        <div class="contact-us" id="contact">
             <h3>We are here to help you ?</h3>
             <div class="btn-outer-box">
                 <div class="btn-inner-box">
@@ -63,12 +60,8 @@
         <div class="shop-now">
             <h1>Start Shopping NOW !</h1>
             <div class="btns-wrapepr">
-                <a href="./beauty.html" class="shop-now-btn">
-                    Shop Now
-                </a>
-                <a href="" class="about-us-btn">
-                    About us                
-                </a>
+                <div class="shop-now-btn">Shop Now</div>
+                <div class="about-us-btn">About us</div>
             </div>
         </div>
     </main>
@@ -78,10 +71,10 @@
         <div class="ctg-main">
 
             <div class="card">
-                <a href="./beauty.html" class="box">
+                <div class="box">
                     <img src="assets/beauty.png">
                     <div class="text">Beauty</div>
-                </a>
+                </div>
             </div>
 
             <div class="card">
@@ -122,9 +115,33 @@
     </section>
 
     <section class="caroussel" id="caroussel">
-        <h2 class="titre"> CARROUSSEL</h2>
+        <h2 class="titre"> SLIDESHOW</h2>
         <div class="ctg-main">
+            <div class="slideshow-container">
 
+                <div class="mySlides fade">
+                    <img src="assets/customer.jpeg">
+                    <div class="text">customer happiness is our priority !</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/fideliser.jpg">
+                    <div class="text">Retain our customers !</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/help.jpg">
+                    <div class="text">Mutual aid is above all !</div>
+                </div>
+
+            </div>
+            <br>
+
+            <div class="dotcenter">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
         </div>
     </section>
 
@@ -159,7 +176,7 @@
     </section>
 
     <section class="properties" id="properties">
-        <h2 class="titre"> PROPERTIES </h2>
+        <h2 class="titre"> OUR PROPERTIES </h2>
         <div class="prp-main">
             <div class="card">
                 <div class="box">
@@ -195,6 +212,75 @@
         </div>
     </section>
 
+    <footer>
+        <div class="main">
+            <img src="assets/whiteSIHA.png">
+            <div class="footer">
+                <div class="single-footer">
+                    <h4>about us</h4>
+                    <div class="footer-social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="single-footer">
+                    <h4>main menu</h4>
+                    <ul>
+                        <li><a href="#Home"> Home</a></li>
+                        <li><a href="#contact"> Contact us</a></li>
+                        <li><a href="#categories"> Categories</a></li>
+                        <li><a href="#working"> How it works ?</a></li>
+                        <li><a href="#properties"> Our Properties</a></li>
+                    </ul>
+                </div>
+                <div class="single-footer">
+                    <h4>quick links</h4>
+                    <ul>
+                        <li><a href=""> privacy policy</a></li>
+                        <li><a href=""> terms & conditions</a></li>
+                        <li><a href=""> disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="single-footer">
+                    <h4>contact us</h4>
+                    <ul>
+                        <li><a href=""><i class="fas fa-map-marker-alt"></i> Casablanca, Morocco</a></li>
+                        <li><a href=""><i class="fas fa-mobile-alt"></i> +212 522345623</a></li>
+                        <li><a href=""><i class="far fa-envelope"></i> contact@siha.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <p>Copyright &copy; 2021 by SIHA | all rights reserved</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
+
+
+<!-- //////////////////////////////////////////// DERT HAD SCRIPT HNA BACH MANKHELTOUCH NFSS FILE DYALSCRIPT.JS ///////////////////////////////////////// -->
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 5000);
+    }
+</script>

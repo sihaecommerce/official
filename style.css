@@ -19,10 +19,6 @@ ul{
     padding: 0;
 }
 
-a{
-    text-decoration: none;
-}
-
 .nav-list{
     display: flex;
     justify-content: space-between;
@@ -124,7 +120,7 @@ main{
 .text-wrapper{
     color: white;
     margin-left: 7%;
-    margin-bottom: 4%;
+    margin-bottom: 10%;
 }
 
 .text-wrapper span{
@@ -141,8 +137,8 @@ main{
 }
 
 .contact-us{
-    background-image: url("./assets/triangle.png");
-    height: 100vh;
+    background-image: url("./assets/polygone.png");
+    height: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -152,14 +148,14 @@ main{
     margin: 0;
     text-align: center;
     color: white;
-    padding-top: 200px;
+    padding-top: 40px;
 }
 
 .btn-outer-box{
     width: 295px;
     height: 85px;
     background-color: white;
-    margin: 100px auto;   
+    margin: 50px auto;   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,6 +186,7 @@ main{
     margin: 0 auto;
     margin-bottom: 100px;
     padding-top: 7px;
+    margin-top: -250px;
 }
 
 .shop-now .btns-wrapepr{
@@ -209,7 +206,7 @@ main{
 }
 
 .shop-now-btn{
-    background-color: #333333;
+    background-color: #333;
     margin-right: 60px;
 }
 
@@ -255,7 +252,8 @@ main{
 }
 .categories .ctg-main .card .text{
     color: #fff;
-    font-size: 25px;
+    font-size: 23px;
+    padding: 6px 0px;
     font-weight: 500;
     background-color: #104D73;
     margin-top: 35px;
@@ -276,6 +274,74 @@ main{
     text-align: center;
 }
 
+.caroussel .ctg-main .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 50px;
+}
+  
+.caroussel .ctg-main .slideshow-container .mySlides .text {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 19px;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.caroussel .ctg-main .slideshow-container .mySlides img{
+    height: 400px;
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #2484BF;
+}
+
+.caroussel .ctg-main .dotcenter{
+    text-align: center;
+}
+.dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active{
+    background-color: #333;
+}
+  
+  
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
 /*/////////////////// working ///////////////////////*/
 
 .working{
@@ -284,6 +350,7 @@ main{
     background-repeat: no-repeat;
     padding: 100px 0px;
     height: 80vh;
+    margin-top: -105px;
 }
 .working .titre{
     font-size: 32px;
@@ -377,3 +444,82 @@ main{
     font-size: 14px;
     padding: 5px 30px;
 }
+
+/* ///////////////////////////////////////////// FOOTER /////////////////////////////////////////////////// */
+footer{
+    color:#fff;
+    background-image: url("assets/footer.png");
+    background-position-x: center;
+    padding: 20px 0px;
+    height: 80vh;
+}
+
+footer .main {
+    width: 1200px;
+    margin: 0 auto;
+}
+footer .main img{
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer .main .footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .main .footer .single-footer {
+    width: 230px;
+    margin-top: -10px;
+}
+
+footer .main .footer .single-footer h4 {
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #2484BF;
+}
+footer .main .footer .single-footer .footer-social a{
+    color: #fff;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+footer .main .footer .single-footer .footer-social {
+    margin-top: 30px;
+}
+footer .main .footer .single-footer .footer-social a i{
+    line-height: 40px;
+}
+  
+footer .main .footer .single-footer .single-footer ul {
+    list-style: none;
+}
+footer .main .footer .single-footer ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+footer .main .footer .single-footer ul li a{
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+footer .main .footer .single-footer ul li a i{
+    margin-right: 10px;
+    color: #2484BF;
+}
+footer .main .copy {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 45px;
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
