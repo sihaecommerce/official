@@ -382,17 +382,19 @@ main{
     height: 160px;
     width: auto;
 }
+.working .description-holder{
+    background-color: #104D73;
+    min-height: 135px;
+}
 .working .wrk-main .card .text{
     color: #fff;
     font-size: 22px;
     font-weight: 500;
-    background-color: #104D73;
     margin-top: 35px;
     padding-top: 10px;
 }
 .working .wrk-main .card p{
     color: #fff;
-    background-color: #104D73;
     font-size: 17px;
     padding: 20px 70px;
     letter-spacing: .7px;
@@ -455,6 +457,8 @@ footer{
     background-position-x: center;
     padding: 20px 0px;
     height: 80vh;
+    margin-top: 100px;
+
 }
 
 footer .main {
@@ -523,6 +527,11 @@ footer .main .copy {
     text-align: center;
     text-transform: capitalize;
     margin-top: 45px;
+}
+
+footer .single-footer .contact-list li a{
+    display: flex;
+    align-items: center;
 }
 
 /* /////////////////////////////////////////////////////////////////////// */
