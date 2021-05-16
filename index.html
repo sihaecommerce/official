@@ -48,7 +48,7 @@
             </div>
         </div>
 
-        <div class="contact-us">
+        <div class="contact-us" id="contact">
             <h3>We are here to help you ?</h3>
             <div class="btn-outer-box">
                 <div class="btn-inner-box">
@@ -115,9 +115,33 @@
     </section>
 
     <section class="caroussel" id="caroussel">
-        <h2 class="titre"> CARROUSSEL</h2>
+        <h2 class="titre"> SLIDESHOW</h2>
         <div class="ctg-main">
+            <div class="slideshow-container">
 
+                <div class="mySlides fade">
+                    <img src="assets/customer.jpeg">
+                    <div class="text">customer happiness is our priority !</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/fideliser.jpg">
+                    <div class="text">Retain our customers !</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/help.jpg">
+                    <div class="text">Mutual aid is above all !</div>
+                </div>
+
+            </div>
+            <br>
+
+            <div class="dotcenter">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
         </div>
     </section>
 
@@ -152,7 +176,7 @@
     </section>
 
     <section class="properties" id="properties">
-        <h2 class="titre"> PROPERTIES </h2>
+        <h2 class="titre"> OUR PROPERTIES </h2>
         <div class="prp-main">
             <div class="card">
                 <div class="box">
@@ -204,11 +228,11 @@
                 <div class="single-footer">
                     <h4>main menu</h4>
                     <ul>
-                        <li><a href=""> Home</a></li>
-                        <li><a href=""> Contact us</a></li>
-                        <li><a href=""> Categories</a></li>
-                        <li><a href=""> How it works ?</a></li>
-                        <li><a href=""> Our Properties</a></li>
+                        <li><a href="#Home"> Home</a></li>
+                        <li><a href="#contact"> Contact us</a></li>
+                        <li><a href="#categories"> Categories</a></li>
+                        <li><a href="#working"> How it works ?</a></li>
+                        <li><a href="#properties"> Our Properties</a></li>
                     </ul>
                 </div>
                 <div class="single-footer">
@@ -236,3 +260,27 @@
 </body>
 
 </html>
+
+
+<!-- //////////////////////////////////////////// DERT HAD SCRIPT HNA BACH MANKHELTOUCH NFSS FILE DYALSCRIPT.JS ///////////////////////////////////////// -->
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000);
+    }
+</script>
