@@ -78,6 +78,8 @@ nav {
     border: none;
     height: 100%;
     width: 70%;
+    font-size: 18px;
+    font-weight: 500;
     outline: none;
     padding: 0 3%;
     
@@ -92,6 +94,7 @@ nav {
     margin-left: auto;
     background-color: #2484BF;
     border-radius: 0px 5px 5px 0px;
+    color: white;
 }
 
 .search-categories:hover,
