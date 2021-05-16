@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
+
 *{
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
@@ -70,6 +72,7 @@ nav {
 .search-categories h3{
     font-weight: 300;
     font-size: 20px;
+    font-family: 'Baloo 2', sans-serif;
 }
 
 
@@ -82,7 +85,7 @@ nav {
     font-weight: 500;
     outline: none;
     padding: 0 3%;
-    
+    font-family: 'Baloo 2', sans-serif;
 }
 
 .search-button{
@@ -135,11 +138,13 @@ main{
 
 .banner-holder h1{
     font-size: 72px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .banner-holder h3{
     font-size: 50px;
     letter-spacing: 0.08em;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .contact-us{
@@ -230,8 +235,10 @@ main{
     padding: 100px 0px;
 }
 .categories .titre{
-    font-size: 32px;
+    font-weight: 500;
+    font-size: 42px;
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
 }
 .categories .ctg-main{
     margin: 80px;
@@ -276,8 +283,10 @@ main{
     margin-top: -110px;
 }
 .caroussel .titre{
-    font-size: 32px;
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 42px;
 }
 
 .caroussel .ctg-main .slideshow-container {
@@ -359,8 +368,10 @@ main{
     margin-top: -105px;
 }
 .working .titre{
-    font-size: 32px;
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 42px;
 }
 .working .wrk-main{
     margin: 80px;
@@ -391,16 +402,17 @@ main{
 }
 .working .wrk-main .card .text{
     color: #fff;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 500;
     margin-top: 35px;
     padding-top: 10px;
+    font-family: 'Baloo 2', sans-serif;
 }
 .working .wrk-main .card p{
     color: #fff;
     font-size: 17px;
     padding: 20px 70px;
-    letter-spacing: .7px;
+    letter-spacing: .9px;
 }
 
 
@@ -414,7 +426,9 @@ main{
     margin-top: -110px;
 }
 .properties .titre{
-    font-size: 32px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 42px;
     text-align: center;
 }
 
@@ -443,9 +457,10 @@ main{
 }
 .properties .prp-main .card .text{
     color: #333;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 500;
     margin-top: 25px;
+    font-family: 'Baloo 2', sans-serif;
 }
 .properties .prp-main .card p{
     color: #555;
@@ -458,10 +473,9 @@ footer{
     color:#fff;
     background-image: url("assets/footer.png");
     background-position-x: center;
-    padding: 20px 0px;
-    height: 80vh;
-    margin-top: 100px;
-
+    padding: 10px 0px;
+    height: 85vh;
+    margin-top: -60px;
 }
 
 footer .main {
@@ -473,6 +487,21 @@ footer .main img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+footer .main h2{
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+footer .main h2 span{
+    color: #2484BF;
+    margin-left: 10px;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
 }
 footer .main .footer {
     display: flex;
@@ -490,6 +519,7 @@ footer .main .footer .single-footer h4 {
     font-size: 22px;
     margin-bottom: 20px;
     color: #2484BF;
+    font-family: 'Ubuntu', sans-serif;
 }
 footer .main .footer .single-footer .footer-social a{
     color: #fff;
@@ -521,6 +551,8 @@ footer .main .footer .single-footer ul li a{
     color: #fff;
     text-transform: capitalize;
     text-decoration: none;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
 }
 footer .main .footer .single-footer ul li a i{
     margin-right: 10px;
