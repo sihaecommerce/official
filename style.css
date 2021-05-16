@@ -460,7 +460,9 @@ footer .main {
 }
 footer .main img{
     height: 200px;
-    margin-left: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 footer .main .footer {
     display: flex;
