@@ -98,6 +98,7 @@ nav {
     align-items: center;
     margin-left: auto;
     background-color: #2484BF;
+    color: white;
     border-radius: 0px 5px 5px 0px;
 }
 
@@ -423,6 +424,25 @@ main{
 .hide-sep{
     display: none;
 }
+.results-wrapper .container{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.not-found{
+    background-color: #104D73;
+    color: white;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20%;
+}
+.not-found h1{
+    font-weight: 500;
+    text-align: center;
+}
 
 /* ///////////////////////////////////////////// FOOTER /////////////////////////////////////////////////// */
 footer{
@@ -430,7 +450,6 @@ footer{
     background-image: url("assets/footer.png");
     background-position-x: center;
     padding: 20px 0px;
-    height: 100vh;
     position:sticky;
     z-index: 100;
     margin-top: 200px;
