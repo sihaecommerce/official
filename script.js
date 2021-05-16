@@ -3,6 +3,10 @@ let products_wrapper = document.querySelector('.product-list')
 const product = document.querySelectorAll('.product')
 let display_status = document.querySelector('.display-status')
 
+const product_imgs = document.querySelectorAll('.product_img')
+const product_prices = document.querySelectorAll('.price')
+const product_title = document.querySelectorAll('.product .description h3')
+
 const one_stars = document.querySelectorAll(".one_stars")
 const two_stars = document.querySelectorAll(".two_stars")
 const three_stars = document.querySelectorAll(".three_stars")
@@ -73,11 +77,11 @@ rating_btns.forEach((btn, i) =>{
     btn.addEventListener('click', ()=>{
         filtred(product_list)
         if (i === 5){
-            display_status.innerHTML =  `All Produccts`
-        }else if (i === 1){
-            display_status.innerHTML =  `${i+1} Stars or less rated produccts`
+            display_status.innerHTML =  `All Products`
+        }else if (i === 0){
+            display_status.innerHTML =  `${i+1} Stars or less rated products`
         }else{
-            display_status.innerHTML =  `${i+1} Stars or higher rated produccts`
+            display_status.innerHTML =  `${i+1} Stars or higher rated products`
         }
     })
 })
@@ -90,6 +94,19 @@ grid_btn.addEventListener('click', () => {
     seperators.forEach(element =>{
         element.classList.remove('hide-sep')
     })
+    product.forEach(element =>{
+        element.classList.remove('product_listed')
+    })
+    product_imgs.forEach(img =>{
+        img.classList.remove('img_listed')
+        img.classList.add('product_img')
+    })
+    product_prices.forEach(price =>{
+        price.classList.remove('price_listed')
+    })
+    product_title.forEach(title =>{
+        title.classList.remove('h3_listed')
+    })
 })
 
 list_btn.addEventListener('click', () => {
@@ -97,4 +114,18 @@ list_btn.addEventListener('click', () => {
     seperators.forEach(element =>{
         element.classList.add('hide-sep')
     })
+    product.forEach(element =>{
+        element.classList.add('product_listed')
+    })
+    product_imgs.forEach(img =>{
+        img.classList.add('img_listed')
+        img.classList.remove('product_img')
+    })
+    product_prices.forEach(price =>{
+        price.classList.add('price_listed')
+    })
+    product_title.forEach(title =>{
+        title.classList.add('h3_listed')
+    })
 })
+

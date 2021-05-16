@@ -293,18 +293,34 @@ main{
     border-radius: 10px;
 }
 
-.product img{
+.product_listed{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.product .product_img{
     width: 200px;
-    width: 200px;
+    height: 200px;
+}
+
+.product .img_listed{
+    width: 300px;
+    width: 300px;
 }
 
 .product .description{
     margin-top: 20px;
 }
 
-.product .description h3{
+.product .description .title,
+.product .description .h3_listed{
     font-size: 16px;
     font-weight: 500;
+}
+
+.product .description .h3_listed{
+    font-size: 24px;
 }
 .product-rating{
     margin-top: 10px;
@@ -330,12 +346,18 @@ main{
     height: 25px;
 }
 
+.product .description .price_listed,
 .product .description .price{
     margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
+
+.product .description .price_listed{
+    justify-content: flex-start;
+}
+
 .price .currency, .price .coma{
     font-size: 20px;
     transform: translateY(11px);
