@@ -159,29 +159,24 @@ main{
     margin: 0;
     text-align: center;
     color: white;
-    padding-top: 40px;
-}
-
-.btn-outer-box{
-    width: 295px;
-    height: 85px;
-    background-color: white;
-    margin: 50px auto;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
 }
 
 .btn-inner-box{
-    width: 285px;
-    height: 75px;
+    text-align: center;
     background-color: #2484BF;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 15px 0px;
     font-size: 32px;
-    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    border: 4px solid #fff;
+    margin-left: 620px;
+    margin-right: 620px;
+    margin-top: 60px;
+    box-shadow: 0px 2px 2px 4px rgba(43, 40, 40, 0.102);
 }
 
 .btn-inner-box:hover{
@@ -200,6 +195,11 @@ main{
     margin-top: -250px;
 }
 
+.shop-now h1{
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
 .shop-now .btns-wrapepr{
     display: flex;
     justify-content: center;
@@ -296,17 +296,27 @@ main{
     padding-top: 50px;
 }
   
-.caroussel .ctg-main .slideshow-container .mySlides .text {
+.caroussel .ctg-main .slideshow-container .mySlides .text-1,
+.caroussel .ctg-main .slideshow-container .mySlides .text-2,
+.caroussel .ctg-main .slideshow-container .mySlides .text-3{
     color: #fff;
     text-transform: capitalize;
-    font-size: 19px;
+    font-size: 32px;
     position: absolute;
-    bottom: 20px;
-    left: 100px;
+    bottom: 40px;
     width: 100%;
     text-align: center;
     font-weight: 400;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Baloo 2', sans-serif;
+}
+.caroussel .ctg-main .slideshow-container .mySlides .text-2{
+    bottom: 25px;
+    text-align: right;
+    right: 200px;
+}
+.caroussel .ctg-main .slideshow-container .mySlides .text-3{
+    bottom: 40px;
+    left: 0px;
 }
 .caroussel .ctg-main .slideshow-container .mySlides img{
     height: 400px;
@@ -411,8 +421,7 @@ main{
 .working .wrk-main .card p{
     color: #fff;
     font-size: 17px;
-    padding: 20px 70px;
-    letter-spacing: .9px;
+    padding: 20px 90px;
 }
 
 
@@ -521,6 +530,7 @@ footer .main .footer .single-footer h4 {
     color: #2484BF;
     font-family: 'Ubuntu', sans-serif;
 }
+
 footer .main .footer .single-footer .footer-social a{
     color: #fff;
     border: 1px solid #fff;
