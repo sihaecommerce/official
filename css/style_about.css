@@ -76,7 +76,7 @@ section .titre {
 .ourteam,
 .objective {
     color: #fff;
-    background-image: url(./assets/blueback.png);
+    background-image: url(../assets/blueback.png);
     padding-top: 150px;
     background-repeat: no-repeat;
 
@@ -84,7 +84,7 @@ section .titre {
 
 .career,
 .choose {
-    background-image: url(./assets/whiteback.png);
+    background-image: url(../assets/whiteback.png);
     margin-top: -120px;
     padding-top: 150px;
 }
@@ -181,25 +181,26 @@ nav {
 /*////////////////////////////////////////////////   about_banner section styling   ////////////////////////////////////////////////////////////////*/
 .about_banner {
     display: flex;
-    background: url("assets/morocco.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("../assets/morocco.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     color: #fff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Exo 2', sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 
-.about_banner .largeur-cd {
-    margin: auto 0 auto 30px;
-}
 
 .about_banner .about_banner-main .med-text {
     font-size: 70px;
     font-weight: 600;
     margin: 5px 0;
     text-align: center;
-    padding-left: 150px;
+    padding: 0 75px;
 }
 
 /*////////////////////////////////////////////////   about section styling   //////////////////////////////////////////////////////////////*/
@@ -337,7 +338,7 @@ nav {
 /* ///////////////////////////////////////////// FOOTER /////////////////////////////////////////////////// */
 footer {
     color: #fff;
-    background-image: url("assets/footer.png");
+    background-image: url("../assets/footer.png");
     background-position-x: center;
     padding: 10px 0px;
     height: 85vh;
