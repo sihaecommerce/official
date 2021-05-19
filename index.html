@@ -22,8 +22,20 @@
                     <div class="search-box">
                         <div class="search-box-holder">
                             <div class="search-categories">
-                                <h3>All</h3>
-                                <i class="fas fa-caret-down"></i>
+                                <div class="container">
+
+                                    <button class="click">All<i class="fas fa-caret-down"></i></button>
+                                    <div class="list">
+
+                                        <a href="#properties"><button class="links">Home</button></a>
+                                        <a href="categories.html"><button class="links">All products</button></a>
+                                        <a href="about.html"><button class="links">About Us</button></a>
+                                        <a href="#properties"><button class="links">Contact Us</button></a>
+                                        <a href="#properties"><button class="links">Home</button></a>
+
+                                    </div>
+
+                                </div>
                             </div>
                             <input class="search-text" type="text" placeholder="Find products">
                             <a href="./product not found.html" class="search-button">
@@ -304,4 +316,14 @@
         dots[slideIndex - 1].className += " active";
         setTimeout(showSlides, 5000);
     }
+
+    let click = document.querySelector('.click');
+
+    let list = document.querySelector('.list');
+
+    click.addEventListener("click", () => {
+
+        list.classList.toggle('newlist');
+
+    });
 </script>
