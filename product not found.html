@@ -231,7 +231,18 @@
             <img src="assets/whiteSIHA.png">
         </div>
     </footer>
-    <script src="./scripts/script.js"></script>
+    <script>
+        // Drop down menu
+
+        let click = document.querySelector('.click');
+        let list = document.querySelector('.list');
+
+        click.addEventListener("click", () => {
+
+            list.classList.toggle('newlist');
+
+        });
+    </script>
 </body>
 
 </html>

@@ -151,7 +151,6 @@ close_btn.addEventListener('click', () => {
 // Drop down menu
 
 let click = document.querySelector('.click');
-
 let list = document.querySelector('.list');
 
 click.addEventListener("click", () => {
