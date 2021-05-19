@@ -635,7 +635,7 @@ form .btn {
 /* ///////////////////////////////////////////// FOOTER /////////////////////////////////////////////////// */
 footer {
     color: #fff;
-    background-image: url("assets/footer.png");
+    background-image: url("../assets/footer.png");
     background-position-x: center;
     padding: 20px 0px;
     position: sticky;
