@@ -181,7 +181,9 @@ nav {
 /*////////////////////////////////////////////////   about_banner section styling   ////////////////////////////////////////////////////////////////*/
 .about_banner {
     display: flex;
-    background: url("assets/morocco.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("assets/morocco.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     color: #fff;
     min-height: 500px;
