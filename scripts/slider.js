@@ -19,3 +19,15 @@ function showSlides() {
     dots[slideIndex - 1].className += " active";
     setTimeout(showSlides, 5000);
 }
+
+// Drop down menu
+
+let click = document.querySelector('.click');
+
+let list = document.querySelector('.list');
+
+click.addEventListener("click", () => {
+
+    list.classList.toggle('newlist');
+
+});
