@@ -3,6 +3,11 @@ let products_wrapper = document.querySelector('.product-list')
 const product = document.querySelectorAll('.product')
 let display_status = document.querySelector('.display-status')
 
+const close_btn = document.querySelector('.close')
+const dark = document.querySelector('.dark')
+const personnal_contact_container = document.querySelector('.personal-contact-container')
+const buy_btns = document.querySelectorAll('.buy-product')
+
 const product_imgs = document.querySelectorAll('.product_img')
 const product_prices = document.querySelectorAll('.price')
 const product_title = document.querySelectorAll('.product .description h3')
@@ -129,3 +134,15 @@ list_btn.addEventListener('click', () => {
     })
 })
 
+
+buy_btns.forEach(btn =>{
+    btn.addEventListener('click', () =>{
+        dark.classList.add('show')
+        personnal_contact_container.classList.add('show')
+    })
+})
+
+close_btn.addEventListener('click', () => {
+    dark.classList.remove('show')
+    personnal_contact_container.classList.remove('show')
+})
