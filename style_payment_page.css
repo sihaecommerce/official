@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 940px;
-  height: 750px;
+  height: 100vh;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
 }
@@ -66,7 +66,7 @@ body {
   align-items: center;
 }
 
-.payment-method .method:active{
+.payment-method .method:active {
   border: 2px solid #2484BF;
 }
 
@@ -138,10 +138,21 @@ input[type='password']:focus {
   border-color: #2484BF;
 }
 
-#date { background: url(img/icons_calendar_black.png) no-repeat 90%; }
-#cardholder { background: url(img/icons_person_black.png) no-repeat 95%; }
-#cardnumber { background: url(img/icons_card_black.png) no-repeat 95%; }
-#verification { background: url(img/icons_lock_black.png) no-repeat 90%; }
+#date {
+  background: url(img/icons_calendar_black.png) no-repeat 90%;
+}
+
+#cardholder {
+  background: url(img/icons_person_black.png) no-repeat 95%;
+}
+
+#cardnumber {
+  background: url(img/icons_card_black.png) no-repeat 95%;
+}
+
+#verification {
+  background: url(img/icons_lock_black.png) no-repeat 90%;
+}
 
 .small-inputs {
   display: flex;
@@ -185,6 +196,98 @@ input[type='password']:focus {
   color: #fff;
   background: #2484BF;
 }
-.btn:active{
-  box-shadow: 3px 6px 30px 9px rgba(177,177,177,0.6);
+
+.btn:active {
+  box-shadow: 3px 6px 30px 9px rgba(177, 177, 177, 0.6);
+}
+
+
+/*
+  --- Checkout Panel
+  */
+.verified-panel {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  width: 700px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 11px 30px 9px rgba(177, 177, 177, 0.6);
+  border-radius: 25px;
+  z-index: 15;
+}
+
+.verified-panel .close {
+  margin-top: 2%;
+  margin-right: 5%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 20;
+}
+
+.close i {
+  transition: all 0.2s ease;
+}
+
+.close i:hover {
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+/* Panel Body */
+.verified-body {
+  padding: 45px 80px 0;
+  flex: 1;
+  transform: translateY(-20px);
+}
+
+.verified-body .fas {
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  color: rgb(13, 194, 13);
+}
+
+.verified-body h3 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.verified-body p {
+  line-height: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.verified-body a {
+  margin-top: 25px;
+  text-decoration: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  margin-left: 180px;
+  margin-right: 180px;
+  color: #fff;
+  background: #2484BF;
+}
+
+.verified-body a:active {
+  box-shadow: 3px 6px 30px 9px rgba(177, 177, 177, 0.6);
+}
+
+.dark {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.show {
+  display: flex;
 }
