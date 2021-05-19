@@ -1,4 +1,4 @@
-const seperators = document.querySelectorAll('.seperator') 
+const seperators = document.querySelectorAll('.seperator')
 let products_wrapper = document.querySelector('.product-list')
 const product = document.querySelectorAll('.product')
 let display_status = document.querySelector('.display-status')
@@ -30,17 +30,17 @@ const five_stars_btn = document.querySelector("#five_stars_btn")
 let rating_btns = [one_stars_btn, two_stars_btn, three_stars_btn, four_stars_btn, five_stars_btn, all_stars_btn];
 
 //filtring function
-const filtred = (list)=>{
+const filtred = (list) => {
     while (products_wrapper.firstChild) {
         products_wrapper.removeChild(products_wrapper.firstChild);
     }
-    if(list == product){
-        list.forEach(child =>{
+    if (list == product) {
+        list.forEach(child => {
             products_wrapper.appendChild(child)
-    })
-    }else{
-        list.forEach(categorie =>{
-            categorie.forEach(child =>{
+        })
+    } else {
+        list.forEach(categorie => {
+            categorie.forEach(child => {
                 products_wrapper.appendChild(child)
             })
         })
@@ -50,7 +50,7 @@ const filtred = (list)=>{
 // Rating Stars Buttons
 
 
-rating_btns.forEach((btn, i) =>{
+rating_btns.forEach((btn, i) => {
     let product_list;
     switch (i) {
         case 0:
@@ -72,21 +72,21 @@ rating_btns.forEach((btn, i) =>{
         case 4:
             product_list = [five_stars]
             break;
-        
+
         case 5:
             product_list = product
             break;
 
     }
 
-    btn.addEventListener('click', ()=>{
+    btn.addEventListener('click', () => {
         filtred(product_list)
-        if (i === 5){
-            display_status.innerHTML =  `All Products`
-        }else if (i === 0){
-            display_status.innerHTML =  `${i+1} Stars or less rated products`
-        }else{
-            display_status.innerHTML =  `${i+1} Stars or higher rated products`
+        if (i === 5) {
+            display_status.innerHTML = `All Products`
+        } else if (i === 0) {
+            display_status.innerHTML = `${i + 1} Stars or less rated products`
+        } else {
+            display_status.innerHTML = `${i + 1} Stars or higher rated products`
         }
     })
 })
@@ -96,47 +96,47 @@ rating_btns.forEach((btn, i) =>{
 
 grid_btn.addEventListener('click', () => {
     products_wrapper.classList.remove('list')
-    seperators.forEach(element =>{
+    seperators.forEach(element => {
         element.classList.remove('hide-sep')
     })
-    product.forEach(element =>{
+    product.forEach(element => {
         element.classList.remove('product_listed')
     })
-    product_imgs.forEach(img =>{
+    product_imgs.forEach(img => {
         img.classList.remove('img_listed')
         img.classList.add('product_img')
     })
-    product_prices.forEach(price =>{
+    product_prices.forEach(price => {
         price.classList.remove('price_listed')
     })
-    product_title.forEach(title =>{
+    product_title.forEach(title => {
         title.classList.remove('h3_listed')
     })
 })
 
 list_btn.addEventListener('click', () => {
     products_wrapper.classList.add('list')
-    seperators.forEach(element =>{
+    seperators.forEach(element => {
         element.classList.add('hide-sep')
     })
-    product.forEach(element =>{
+    product.forEach(element => {
         element.classList.add('product_listed')
     })
-    product_imgs.forEach(img =>{
+    product_imgs.forEach(img => {
         img.classList.add('img_listed')
         img.classList.remove('product_img')
     })
-    product_prices.forEach(price =>{
+    product_prices.forEach(price => {
         price.classList.add('price_listed')
     })
-    product_title.forEach(title =>{
+    product_title.forEach(title => {
         title.classList.add('h3_listed')
     })
 })
 
 
-buy_btns.forEach(btn =>{
-    btn.addEventListener('click', () =>{
+buy_btns.forEach(btn => {
+    btn.addEventListener('click', () => {
         dark.classList.add('show')
         personnal_contact_container.classList.add('show')
     })
@@ -146,3 +146,16 @@ close_btn.addEventListener('click', () => {
     dark.classList.remove('show')
     personnal_contact_container.classList.remove('show')
 })
+
+
+// Drop down menu
+
+let click = document.querySelector('.click');
+
+let list = document.querySelector('.list');
+
+click.addEventListener("click", () => {
+
+    list.classList.toggle('newlist');
+
+});
