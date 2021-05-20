@@ -27,6 +27,10 @@ a {
     text-decoration: none;
 }
 
+.flex {
+    display: flex;
+}
+
 /* ------------------ */
 
 .nav-list {
@@ -70,6 +74,10 @@ nav {
     position: relative;
 }
 
+nav .search-categories .container button i {
+    margin-left: 10px;
+}
+
 .click {
     background-color: #2484BF;
     border-bottom-left-radius: 5px;
@@ -102,10 +110,6 @@ nav {
 
 a .links:hover {
     cursor: pointer;
-}
-
-.fas {
-    margin-left: 10px;
 }
 
 .newlist {
@@ -379,11 +383,6 @@ main {
 }
 
 
-.product_listed {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
 
 .product .inner-card {
     font-size: 50px;
@@ -397,7 +396,7 @@ main {
     border-radius: 10px;
 }
 
-.product:hover .inner-card {
+.product:hover .flip-product {
     transform: rotateY(180deg);
     width: 100%;
 }
@@ -411,7 +410,8 @@ main {
     -webkit-backface-visibility: hidden;
 }
 
-.front-card {
+.front-card,
+.product_listed {
     width: 100%;
     height: 100%;
     display: flex;
@@ -420,9 +420,24 @@ main {
     align-items: center;
 }
 
+.product_listed {
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+
 
 .back-card {
     transform: rotateY(180deg);
+}
+
+.listed-back-card {
+    transform: rotateY(0);
+    position: relative;
+    width: 40%;
+    margin-left: auto;
 }
 
 .back-card .product-description {
@@ -483,10 +498,6 @@ main {
     transform: translateY(20px);
 }
 
-.product .img_listed {
-    width: 300px;
-    width: 300px;
-}
 
 .product .description {
     padding: 0 30px;
@@ -500,7 +511,8 @@ main {
 }
 
 .product .description .h3_listed {
-    font-size: 24px;
+    font-size: 20px;
+    margin-right: 25%;
 }
 
 .product-rating {
@@ -647,7 +659,7 @@ form .btn {
     opacity: 70%;
 }
 
-.list {
+.listed {
     display: flex;
     flex-direction: column;
 }
