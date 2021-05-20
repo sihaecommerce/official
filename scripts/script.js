@@ -3,6 +3,10 @@ let products_wrapper = document.querySelector('.product-list')
 const product = document.querySelectorAll('.product')
 let display_status = document.querySelector('.display-status')
 
+const inners = document.querySelectorAll('.inner-card')
+const front_cards = document.querySelectorAll('.front-card')
+const back_cards = document.querySelectorAll('.back-card')
+
 const close_btn = document.querySelector('.close')
 const dark = document.querySelector('.dark')
 const personnal_contact_container = document.querySelector('.personal-contact-container')
@@ -95,16 +99,12 @@ rating_btns.forEach((btn, i) => {
 // grid - list Buttons
 
 grid_btn.addEventListener('click', () => {
-    products_wrapper.classList.remove('list')
+    products_wrapper.classList.remove('listed')
     seperators.forEach(element => {
         element.classList.remove('hide-sep')
     })
-    product.forEach(element => {
+    front_cards.forEach(element => {
         element.classList.remove('product_listed')
-    })
-    product_imgs.forEach(img => {
-        img.classList.remove('img_listed')
-        img.classList.add('product_img')
     })
     product_prices.forEach(price => {
         price.classList.remove('price_listed')
@@ -112,25 +112,34 @@ grid_btn.addEventListener('click', () => {
     product_title.forEach(title => {
         title.classList.remove('h3_listed')
     })
+    inners.forEach(inner =>{
+        inner.classList.add('flip-product')
+    })
+    back_cards.forEach(back_card =>{
+        back_card.classList.remove('listed-back-card')
+    })
 })
 
 list_btn.addEventListener('click', () => {
-    products_wrapper.classList.add('list')
+    products_wrapper.classList.add('listed')
     seperators.forEach(element => {
         element.classList.add('hide-sep')
     })
-    product.forEach(element => {
+    front_cards.forEach(element => {
         element.classList.add('product_listed')
-    })
-    product_imgs.forEach(img => {
-        img.classList.add('img_listed')
-        img.classList.remove('product_img')
     })
     product_prices.forEach(price => {
         price.classList.add('price_listed')
     })
     product_title.forEach(title => {
         title.classList.add('h3_listed')
+    })
+    inners.forEach(inner =>{
+        inner.classList.remove('flip-product')
+        inner.classList.add('flex')
+    })
+    back_cards.forEach(back_card =>{
+        back_card.classList.add('listed-back-card')
     })
 })
 
