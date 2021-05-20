@@ -425,6 +425,8 @@ main {
     align-content: center;
     justify-content: flex-start;
     padding-left: 50px;
+    box-sizing: border-box;
+    width: 50%;
 }
 
 
@@ -512,7 +514,6 @@ main {
 
 .product .description .h3_listed {
     font-size: 20px;
-    margin-right: 25%;
 }
 
 .product-rating {
