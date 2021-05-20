@@ -36,7 +36,7 @@ section {
 
 .about .about-main,
 .ourteam .proj-main,
-.skills .skills-content{
+.skills .skills-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -124,59 +124,68 @@ nav {
 }
 
 .container {
-    width:200px;
-    position: relative;  
+    height: 6vh;
+    position: relative;
 }
-  
-.click{
+
+.click {
     background-color: #2484BF;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     margin-bottom: 1px;
     font-size: 1.2em;
+    cursor: pointer;
 }
-  
+
 .click:hover {
     background-color: rgba(36, 132, 191, 0.843);
-  
 }
+
 
 .click,.links {
     height: 6vh;
+}
+.click,
+.links {
+    height: 100%;
     border: none;
     outline: none;
     width: 140px;
-    color:#fff;
+    color: #fff;
     transition: 0.3s;
 }
-  
+
 .list {
     position: absolute;
     transform: scaleY(0);
     transform-origin: top;
-    transition: 0.3s;  
+    transition: 0.3s;
 }
 
-.fas{
+a .links:hover {
+    cursor: pointer;
+}
+
+.fas {
     margin-left: 10px;
 }
 
 .newlist {
-    transform: scaleY(1);  
+    transform: scaleY(1);
 }
-  
+
 .links {
-  
+
     background-color: #E9E9E9;
     padding: 10px;
     font-size: 16px;
     color: #104D73;
 }
 
-.links:hover {  
-  background-color: #2484BF;
-  color: #fff;
-  
+.links:hover {
+    background-color: #2484BF;
+    color: #fff;
+
 }
 
 

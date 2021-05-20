@@ -27,6 +27,10 @@ a {
     text-decoration: none;
 }
 
+.flex {
+    display: flex;
+}
+
 /* ------------------ */
 
 .nav-list {
@@ -66,59 +70,64 @@ nav {
 }
 
 .container {
-    width:200px;
-    position: relative;  
+    height: 6vh;
+    position: relative;
 }
-  
-.click{
+
+nav .search-categories .container button i {
+    margin-left: 10px;
+}
+
+.click {
     background-color: #2484BF;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     margin-bottom: 1px;
     font-size: 1.2em;
-}
-  
-.click:hover {
-    background-color: rgba(36, 132, 191, 0.843);
-  
+    cursor: pointer;
 }
 
-.click,.links {
+.click:hover {
+    background-color: rgba(36, 132, 191, 0.843);
+}
+
+.click,
+.links {
     height: 100%;
     border: none;
     outline: none;
     width: 140px;
-    color:#fff;
+    color: #fff;
     transition: 0.3s;
 }
-  
+
 .list {
     position: absolute;
     transform: scaleY(0);
     transform-origin: top;
-    transition: 0.3s;  
+    transition: 0.3s;
 }
 
-.fas{
-    margin-left: 10px;
+a .links:hover {
+    cursor: pointer;
 }
 
 .newlist {
-    transform: scaleY(1);  
+    transform: scaleY(1);
 }
-  
+
 .links {
-  
+
     background-color: #E9E9E9;
     padding: 10px;
     font-size: 16px;
     color: #104D73;
 }
 
-.links:hover {  
-  background-color: #2484BF;
-  color: #fff;
-  
+.links:hover {
+    background-color: #2484BF;
+    color: #fff;
+
 }
 
 
@@ -374,11 +383,6 @@ main {
 }
 
 
-.product_listed {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
 
 .product .inner-card {
     font-size: 50px;
@@ -392,7 +396,7 @@ main {
     border-radius: 10px;
 }
 
-.product:hover .inner-card {
+.product:hover .flip-product {
     transform: rotateY(180deg);
     width: 100%;
 }
@@ -406,7 +410,8 @@ main {
     -webkit-backface-visibility: hidden;
 }
 
-.front-card {
+.front-card,
+.product_listed {
     width: 100%;
     height: 100%;
     display: flex;
@@ -415,9 +420,26 @@ main {
     align-items: center;
 }
 
+.product_listed {
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+
 
 .back-card {
     transform: rotateY(180deg);
+}
+
+.listed-back-card {
+    transform: rotateY(0);
+    position: relative;
+    width: 40%;
+    margin-left: auto;
 }
 
 .back-card .product-description {
@@ -478,10 +500,6 @@ main {
     transform: translateY(20px);
 }
 
-.product .img_listed {
-    width: 300px;
-    width: 300px;
-}
 
 .product .description {
     padding: 0 30px;
@@ -495,7 +513,7 @@ main {
 }
 
 .product .description .h3_listed {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .product-rating {
@@ -642,7 +660,7 @@ form .btn {
     opacity: 70%;
 }
 
-.list {
+.listed {
     display: flex;
     flex-direction: column;
 }
