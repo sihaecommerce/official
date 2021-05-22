@@ -118,6 +118,10 @@ grid_btn.addEventListener('click', () => {
     back_cards.forEach(back_card =>{
         back_card.classList.remove('listed-back-card')
     })
+    product_imgs.forEach(img =>{
+        img.classList.remove('img_listed')
+        img.classList.add('product_img')
+    })
 })
 
 list_btn.addEventListener('click', () => {
@@ -140,6 +144,10 @@ list_btn.addEventListener('click', () => {
     })
     back_cards.forEach(back_card =>{
         back_card.classList.add('listed-back-card')
+    })
+    product_imgs.forEach(img =>{
+        img.classList.add('img_listed')
+        img.classList.remove('product_img')
     })
 })
 
