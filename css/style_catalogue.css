@@ -485,19 +485,44 @@ main {
 
 
 .product .product_img {
-    width: 200px;
-    height: 200px;
+    width: 4em;
+    height: 4em;
 }
 
+#toothpaste img {
+    transform: rotate(-90deg);
+}
 
 #b3 img {
-    width: 150px;
-    height: 150px;
-    margin-top: 50px;
+    width: 3.5em;
+    height: 3.5em;
 }
 
 #b5 img {
     transform: translateY(20px);
+}
+
+#mask img {
+    width: 300px;
+}
+
+#rollpaper img {
+    transform: translateY(15px);
+}
+
+#hand_sanitizer img {
+    transform: translateY(15px);
+    width: 90px;
+}
+
+#handsoap img {
+    width: 250px;
+    height: 250px;
+}
+
+
+#handsoap .description {
+    margin: 0;
 }
 
 
