@@ -422,8 +422,6 @@ main {
 
 .product_listed {
     flex-direction: row;
-    align-content: center;
-    justify-content: flex-start;
     padding-left: 50px;
     box-sizing: border-box;
     width: 50%;
