@@ -481,47 +481,33 @@ main {
 
 }
 
-
+.img_listed,
 .product .product_img {
-    width: 4em;
-    height: 4em;
+    width: 200px;
+    height: 200px;
+    transform: scale(0.9) translateY(10px);
 }
 
 #toothpaste img {
     transform: rotate(-90deg);
 }
 
-#b3 img {
-    width: 3.5em;
-    height: 3.5em;
-}
 
-#b5 img {
-    transform: translateY(20px);
-}
 
 #mask img {
     width: 300px;
 }
 
-#rollpaper img {
-    transform: translateY(15px);
-}
 
 #hand_sanitizer img {
-    transform: translateY(15px);
     width: 90px;
 }
 
+
 #handsoap img {
-    width: 250px;
-    height: 250px;
+    transform: scale(1.2);
 }
 
-
-#handsoap .description {
-    margin: 0;
-}
 
 
 .product .description {
@@ -537,6 +523,10 @@ main {
 
 .product .description .h3_listed {
     font-size: 20px;
+}
+
+.img_listed {
+    transform: scale(1.2);
 }
 
 .product-rating {
